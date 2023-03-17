@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Face Recognition ML Project</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Machine Learning project based on face recognition." />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="author" content="Szymon Markiewicz, Jacek Zalewski, Justyna Pokora, Błażej Misiura" />
+    </head>
+    <body>
+        <h2>Webcam face detection</h2>
+        <p>Click "Launch camera" to start. This app will process input from your camera, add a bounding box around your
+            face and predict both your age and gender.</p>
+        {% if stream_started %}
+            <img src="{% url 'stream_output' %}" alt="Can't stream :(">
+            <a href="{% url 'stop_streaming' %}"><button type="button">Stop</button></a>
+        {% else %}
+            <p>Average number of fps: {{ fps_number }}</p>
+            <a href="{% url 'start_streaming' %}"><button type="button">Launch camera</button></a>
+        {% endif %}
+        <a href="{% url 'home' %}"><button type="button">Go back</button></a>
+        <noscript>
+            For full functionality of this site it is necessary to enable JavaScript.
+            Here are the <a href="https://www.enable-javascript.com/">
+            instructions how to enable JavaScript in your web browser</a>.
+           </noscript>
+    </body>
+</html>
