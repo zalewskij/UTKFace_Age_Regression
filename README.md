@@ -11,8 +11,11 @@ Different approaches:
 ## Dataset analysis:
 `dataset_descriptive_statistics.ipynb`
 
-## Convolutiona neural networks: 
+## Convolutiona neural networks: /machine_learning_report.pdf
 `/cnn/utk_age_cnn.ipynb`
 
 ## MobileNet and ResNet architectures: 
 `/transfer_learning/Tranfer_learning_models_and_testing.ipynb`
+
+## Results are presented in:
+`/machine_learning_report.pdf`
