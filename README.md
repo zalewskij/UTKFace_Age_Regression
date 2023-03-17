@@ -17,5 +17,6 @@ Different approaches:
 ## MobileNet and ResNet architectures: 
 `/transfer_learning/Tranfer_learning_models_and_testing.ipynb`
 
-## Results are presented in:
+## Report:
 `/machine_learning_report.pdf`
+/machine_learning_report.pdf
