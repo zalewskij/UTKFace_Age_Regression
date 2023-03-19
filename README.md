@@ -3,7 +3,7 @@ In the project UTKFace datesets is used. (https://susanqq.github.io/UTKFace/)
 The main goal of the project is to estimate age of a person based on image.  
 
 Different approaches:
-1. Convoluional Neural Networks
+1. Convolutional Neural Networks
 2. Transfer Learning with ResNet architecture
 3. Transfer Learning with MobileNet architecture
 
